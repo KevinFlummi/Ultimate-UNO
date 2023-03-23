@@ -1,0 +1,115 @@
+\documentclass[a4paper,landscape, 10pt,twocolumn]{scrartcl}
+
+\usepackage{geometry}
+\geometry{left=0.75cm, right=0.75cm, top=0.25cm, bottom=1cm}
+\usepackage{changepage}
+\usepackage[automark]{scrlayer-scrpage}
+\clearpairofpagestyles
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\frenchspacing
+\usepackage{setspace}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+\usepackage{rotating}
+\usepackage[ngerman]{babel}
+\selectlanguage{german}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+\titleformat{\subsection}
+    {\color{teal}\Large\vspace{-0.7em}}
+    {}
+    {0em}
+    {\vspace{-0.3em}}
+\titleformat{\subsubsection}
+    {\color{teal}\large\vspace{-1.2em}}
+    {}
+    {0em}
+    {\vspace{-0.3em}}
+\def\itemspace{\vspace{6pt}\\}
+
+\begin{document}
+\twocolumn[\begin{@twocolumnfalse}
+    \begin{center}
+        \LARGE{\textcolor{teal}{Extreme UNO + Skiregeln - Regelwerk (Beta 0.6.1)}} \\ \vspace{5pt}
+        \large{Offizielle Farbennamen: Pink, Grün, Blau, Orange \quad - \quad ''unblockbar'' > \{''schützt'', ''gibt zurück'', ''deaktiviert''\}}
+        \rule{\linewidth}{1pt}
+    \end{center}
+\end{@twocolumnfalse}]
+    \small
+    \subsection{\textbf{Farbige Karten} - Nur bei gleicher Farbe spielbar}
+    \begin{tabular}{p{3cm}p{9.2cm}}
+        \textbf{Doge -1}:        & - Die nächste Person spielt einen Zug mehr \\
+                                 & - Reduziert $\pm$X-Karten um 1 \itemspace
+        \textbf{Big Chungus}:    & - Wechselt die Spielrichtung \\
+                                 & - Richtet alle $\pm$X-Karten/Aussetzer in die neue Richtung\itemspace
+        \textbf{Fred Perry}:     & - Ohne vorige Angriffskarte: Lässt die nächste Person aussetzen\\
+                                 & - Mit voriger Angriffskarte: Schiebt alle $\pm$X-Karten weiter\itemspace
+        \textbf{Crab Rave}:      & - Wechselt die Spielrichtung samt aller Angriffskarten und lässt die nächste Person aussetzen\itemspace
+        \textbf{Swiper / Mopsie}:& - Tausche die Handkarten mit der entsprechenden Person \\
+                                 & - \textbf{KEIN Richtungswechsel!}\itemspace
+        \textbf{Monster Reborn}: & - Ziehe eine beliebige Karte vom Ablagestapel \itemspace
+        \textbf{Ward}:           & - Schaue in die Karten einer beliebigen Person \itemspace
+        \textbf{Illuminati}:     & - Alle legen die Karten offen \itemspace
+        \textbf{Ooooof}:         & - Jede $\pm$X-Karte erhält zusätzlich +2 \\
+                                 & - Endet beim Wechsel der Farbe oder sobald die Angriffsrunde beendet wurde\itemspace
+        \textbf{Kondom}:         & - Schützt vor Swiper, Mopsie, Ward, Offensiven Wild Cards \itemspace
+    \end{tabular}
+
+\setlength{\parindent}{0pt}
+\rule{\linewidth}{0.25pt}
+
+    \subsection{\textbf{Action Cards} - Nur bei gleicher Farbe spielbar}
+    \begin{tabular}{p{3cm}p{9.5cm}}
+        \textbf{Reset}:           & - Setzt das Spiel zurück (wird nicht wieder zum Deck hinzugefügt)\itemspace
+        \textbf{XBOX}:            & - Klaue den nächsten Zug einer beliebigen Person \itemspace
+        \textbf{Kommunismus}:     & - Alle Handkarten zusammenlegen und kameradschaftlich aufteilen \itemspace
+        \textbf{Nami (One Piece)}:& - Tausche deine Handkarten mit einer beliebigen Person \itemspace
+        \textbf{Ditto}:           & - Kopiert die letzte Karte \itemspace
+        \textbf{Berserker's Soul}:& - (Unblockbar) Benutze alle deine $\pm$X-Karten auf eine beliebige Person \itemspace
+        \textbf{No U}:            & - Gibt $\pm$X, Aussetzer, Richtungswechsler, XBOX, Ward, No U und Offensive Wild Cards an den Angreifer zurück\\
+                                  & - \textbf{Richtungswechsel!} \itemspace
+        \textbf{.exe}:            & - Deaktiviert $\pm$X, Aussetzer, Richtungswechsler, XBOX, Ward, Swiper/Mopsie, Offensive Wild Cards, No U, Reset, Kommunismus und Nami \itemspace
+    \end{tabular}
+
+\newpage
+
+    \subsection{\textbf{Wild Cards} - Auf alle Farben spielbar; Farbwünscher}
+    \begin{tabular}{p{3cm}p{9.5cm}}
+      \textbf{Creeper}:           &	- Ziehe sofort 3 Karten und lege die Karte ab\itemspace
+      \textbf{Thanos}:            & - Wirf die eigenen Handkarten ab und ziehe halb so viele neue Karten\itemspace
+      \textbf{Monopoly}:         	& - Wirf alle eigenen Karten der gewünschten Farbe ab\itemspace
+      \textbf{Draw 4 (x2)}: 	    & - +4 Karten; Alle vorherigen +X Karten werden verdoppelt\itemspace
+      \textbf{Draw 6 (x2)}:       & -	+6 Karten; Alle vorherigen +X Karten werden verdoppelt\itemspace
+    \end{tabular}
+    \subsubsection{\textbf{Offensive Wild Cards} - Unterklasse der Wild Cards}
+      \begin{tabular}{p{3cm}p{9.5cm}}
+        \textbf{Greed Pact}: 	      & - Alle ziehen 2 Karten\itemspace
+        \textbf{Draw Die Roll}: 	  & - Die nächste Person muss würfeln und die Anzahl an Augen als Karten ziehen\itemspace
+        \textbf{Thaddäus}: 	        & - Die nächste Person muss bis zur beim Legen gewünschten Farbe ziehen\itemspace
+        \textbf{Catch me outside}: 	& - Die nächste Person zieht den gesamten Ablagestapel, bis auf dieser Karte\itemspace
+        \textbf{Suprised Pikachu}: 	& - Die nächste Person wirft alle Wild Cards von der Hand ab\itemspace
+        \textbf{Hurting Economy}: 	& - Nimm alle Wild Cards der Hand der nächsten Person\itemspace
+        \textbf{360 Noscope}: 	    & - Kann an eine beliebige Person gerichtet werden; Bei ≥5 Handkarten zieht sie 10 Karten; Bei <5 Handkarten wirft sie alle Karten ab und zieht 20 neue Karten;\itemspace
+        \textbf{D-D-D-D-D-Duel}: 	  & - Kann an eine beliebige Person gerichtet werden; Unblockbar; Die angreifende Person und die betroffene Person legen zeitgleich eine ihrer Handkarten vor sich; Die Person mit dem niedrigeren Kartenwert zieht 15 Karten; Bei Unentschieden ziehen beide 4 Karten\itemspace
+      \end{tabular}
+
+\setlength{\parindent}{0pt}
+\rule{\linewidth}{0.25pt}
+
+    \subsection{\textbf{Special Action Cards} - Unabhängig vom Kartenstapel}
+    \begin{tabular}{p{3cm}p{9.5cm}}
+      \textbf{U-NO}: 		          & - Immer Spielbar, sobald jemand „UNO“ sagt: Die Person, die „UNO“ gesagt hat, muss 2 Karten ziehen; Auch während des eigenen Zuges ablegbar, aber ohne Effekt\itemspace
+      \textbf{Exodia}: 	          & - Sofortiger Gewinn, wenn man alle 5 Teile auf der Hand hat; Beim Ablegen während des eigenen Zuges: Der Ablagestapel wird mit dem Deck neu gemischt und eine neue Karte wird aufgedeckt\itemspace
+    \end{tabular}
+
+% patchnotes sind eigene Datei
+\input{patchnotes}
+
+ \end{document}
