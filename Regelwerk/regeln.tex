@@ -19,7 +19,7 @@
 \selectlanguage{german}
 \usepackage[babel,german=quotes]{csquotes}
 \usepackage{hyperref}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{titlesec}
 \usepackage{lipsum}
 
@@ -38,7 +38,7 @@
 \begin{document}
 \twocolumn[\begin{@twocolumnfalse}
     \begin{center}
-        \LARGE{\textcolor{teal}{Extreme UNO + Skiregeln - Regelwerk (Beta 0.7)}} \\ \vspace{5pt}
+        \LARGE{\textcolor{teal}{Extreme UNO + Skiregeln - Regelwerk (Beta 0.8)}} \\ \vspace{5pt}
         \large{Offizielle Farbennamen: Pink, Grün, Blau, Orange \quad - \quad ''unblockbar'' > \{''schützt'', ''gibt zurück'', ''deaktiviert''\}}
         \rule{\linewidth}{1pt}
     \end{center}
@@ -70,44 +70,48 @@
 %\rule{\linewidth}{0.25pt}
 \newpage
 
-    \subsection{\textbf{Action Cards} - Nur bei gleicher Farbe spielbar}
+    \subsection{\textbf{Action Cards} - Auf alle Farben spielbar}
     \begin{tabular}{p{3cm}p{9.5cm}}
         \textbf{Reset}:                     & - Setzt das Spiel zurück (wird nicht wieder zum Deck hinzugefügt)\itemspace
         \textbf{XBOX}:                      & - Klaue den nächsten Zug einer beliebigen Person \itemspace
-        \textbf{Kommunismus}:               & - Alle Handkarten zusammenlegen und kameradschaftlich aufteilen \itemspace
+        \textbf{Kommunismus}:               & - Alle Handkarten zusammenlegen und unter allen Genoss*innen aufteilen \itemspace
         \textbf{Nami (One Piece)}:          & - Tausche deine Handkarten mit einer beliebigen Person \itemspace
         \textbf{Ditto}:                     & - Kopiert die letzte Karte \itemspace
         \textbf{Berserker's Soul}:          & - (Unblockbar) Benutze alle deine $\pm$X-Karten auf eine beliebige Person \itemspace
-        \textbf{No U}:                      & - Gibt $\pm$X, Aussetzer, Richtungswechsler, XBOX, Ward, No U und Offensive Wild Cards an den Angreifer zurück\\
+        \textbf{No U}:                      & - Gibt $\pm$X, Aussetzer, Richtungswechsler, XBOX, Ward, No U und Offensive Wild Cards an die angreifende Person zurück\\
                                             & - \textbf{Richtungswechsel!} \itemspace
         \textbf{.exe}:                      & - Deaktiviert $\pm$X, Aussetzer, Richtungswechsler, XBOX, Ward, Swiper/Mopsie, Offensive Wild Cards, No U, Reset, Kommunismus und Nami \itemspace
         \textbf{Corrupted Save}:\newline(DLC1) & - Lösche eine beliebige Handkarte von einer beliebigen anderen Person \itemspace
-        \textbf{PETA}:\newline(DLC1)               & - Nimm alle Action und Special Cards der Hand einer beliebigen Person; Eine andere Person nimmt hiervon die Hälfte (abgerundet) und legt sie auf den Ablagestapel, die andere Hälfte kommt in deine Hand \itemspace
+        \textbf{PETA}:\newline(DLC1)           & - Nimm alle Action und Special Cards der Hand einer beliebigen Person; Eine andere Person nimmt hiervon die Hälfte (abgerundet) und legt sie auf den Ablagestapel, die andere Hälfte kommt in deine Hand \itemspace
+        \textbf{Besetzt}:\newline(LÖNers)      & - Die nächste Person muss den geplanten Spielzug offen durchführen und sofort wieder zurücknehmen \itemspace
+        \textbf{Notdienst}:\newline(LÖNers)    & - Die nächste Person darf für 3 Runden keine Action Cards spielen \itemspace
+        \textbf{Workers}:\newline(LÖNers)      & - Alle Personen müssen so lange Spezialkarten legen, bis eine Person keine mehr hat (bis zum Anschlag halt) \itemspace
     \end{tabular}
 
 \newpage
 
-    \subsection{\textbf{Wild Cards} - Auf alle Farben spielbar; Farbwünscher}
+    \subsection{\textbf{Wild Cards} - Auf alle Farben spielbar; Farbwunsch}
     \begin{tabular}{p{3cm}p{9.5cm}}
       \textbf{Creeper}:                   &	- Ziehe sofort 3 Karten und lege die Karte ab\itemspace
       \textbf{Thanos}:                    & - Wirf die eigenen Handkarten ab und ziehe halb so viele neue Karten\itemspace
       \textbf{Monopoly}:         	        & - Wirf alle eigenen Karten der gewünschten Farbe ab\itemspace
       \textbf{Draw 4 (x2)}: 	            & - +4 Karten; Alle vorherigen +X Karten werden verdoppelt\itemspace
       \textbf{Draw 6 (x2)}:               & -	+6 Karten; Alle vorherigen +X Karten werden verdoppelt\itemspace
+     \textbf{Greed Pact}: 	              & - Alle ziehen 2 Karten\itemspace
+     \textbf{Draw Die Roll}: 	            & - Die nächste Person muss würfeln und die Anzahl an Augen als Karten ziehen\itemspace
+     \textbf{Thaddäus}: 	                & - Die nächste Person muss bis zur beim Legen gewünschten Farbe ziehen\itemspace
+     \textbf{Catch me outside}:          	& - Die nächste Person zieht den gesamten Ablagestapel, bis auf dieser Karte\itemspace
+     \textbf{Suprised Pikachu}:          	& - Die nächste Person wirft alle Wild Cards von der Hand ab\itemspace
+     \textbf{Hurting Economy}: 	          & - Nimm alle Wild Cards der Hand der nächsten Person\itemspace
+     \textbf{360 Noscope}: 	              & - Kann an eine beliebige Person gerichtet werden; Bei ≥5 Handkarten zieht sie 10 Karten; Bei <5 Handkarten wirft sie alle Karten ab und zieht 20 neue Karten;\itemspace
+     \textbf{D-D-D-D-D-Duel}: 	          & - Kann an eine beliebige Person gerichtet werden; Unblockbar; Die angreifende Person und die betroffene Person legen zeitgleich eine ihrer Handkarten vor sich; Die Person mit dem niedrigeren Kartenwert zieht 15 Karten; Bei Unentschieden ziehen beide 4 Karten\itemspace
      \textbf{Heart of the cards}:\newline(DLC1) & - Kann als Verteidigung gegen Angriffskarten gespielt werden; Die Person, die die Karte gelegt hat, zieht 3 Karten; Kann eine dieser Karten zur Verteidigung gegen die Karte gespielt werden, kann sie gelegt werden \itemspace
      \textbf{WWGWTWF}:\newline(DLC1)            & - Kann als Verteidigung gegen Angriffskarten gespielt werden; Die nächste Person muss die Angriffskarte abwehren; Ist dies nicht möglich, werden beide Personen vom Effekt getroffen \itemspace
-    \end{tabular}
-    \subsubsection{\textbf{Offensive Wild Cards} - Unterklasse der Wild Cards}
-      \begin{tabular}{p{3cm}p{9.5cm}}
-        \textbf{Greed Pact}: 	      & - Alle ziehen 2 Karten\itemspace
-        \textbf{Draw Die Roll}: 	  & - Die nächste Person muss würfeln und die Anzahl an Augen als Karten ziehen\itemspace
-        \textbf{Thaddäus}: 	        & - Die nächste Person muss bis zur beim Legen gewünschten Farbe ziehen\itemspace
-        \textbf{Catch me outside}: 	& - Die nächste Person zieht den gesamten Ablagestapel, bis auf dieser Karte\itemspace
-        \textbf{Suprised Pikachu}: 	& - Die nächste Person wirft alle Wild Cards von der Hand ab\itemspace
-        \textbf{Hurting Economy}: 	& - Nimm alle Wild Cards der Hand der nächsten Person\itemspace
-        \textbf{360 Noscope}: 	    & - Kann an eine beliebige Person gerichtet werden; Bei ≥5 Handkarten zieht sie 10 Karten; Bei <5 Handkarten wirft sie alle Karten ab und zieht 20 neue Karten;\itemspace
-        \textbf{D-D-D-D-D-Duel}: 	  & - Kann an eine beliebige Person gerichtet werden; Unblockbar; Die angreifende Person und die betroffene Person legen zeitgleich eine ihrer Handkarten vor sich; Die Person mit dem niedrigeren Kartenwert zieht 15 Karten; Bei Unentschieden ziehen beide 4 Karten\itemspace
-      \end{tabular}
+     \textbf{Polo}:\newline(LÖNers)             & - Die nächste Person muss eine Wild Card legen oder 3 ziehen \itemspace
+     \textbf{Inselverbot}:\newline(LÖNers)      & - Die nächste Person darf für 3 Runden keine Wild Cards spielen \itemspace
+     \textbf{Verhaftet}:\newline(LÖNers)        & - Alle farbigen Karten der nächsten Person werden willkürlich für 3 Runden in Gewahrsam genommen \\
+                                                & - Hat die Person innerhalb dieser Zeit keine Handkarten mehr, muss die Person aussetzen \itemspace
+   \end{tabular}
 
 %\setlength{\parindent}{0pt}
 %\rule{\linewidth}{0.25pt}
@@ -138,7 +142,7 @@
   In diesem DLC werden tatsächliche Spielerweiterungen in Form von anderen Spielen eingeführt. Diese Karten sind genauso spielbar, wie Action Cards. \itemspace
     \begin{tabular}{p{3cm}p{9.5cm}}
     \textbf{Black Jack}:            & - Alle Personen erhalten zwei Spielmarken, die wie normale Einsätze gesetzt werden können. Nach drei Runden BlackJack ist das Spiel vorbei und alle können ihre Münzen an andere Leute verteilen. Jede Münze bedeutet +1 Karte. Man kann die eigenen Münzen auch behalten und für jede Münze eine Karte ablegen, sofern man danach noch über 10 Karten hat\itemspace
-      \textbf{Rock Paper Scissors}: & - Spiele drei Runden Schere-Stein-Papier gegen die Person mit den wenigsten Karten. Nach jeder Niederlage muss man wenn Stein gewonnen hat 3, wenn Papier gewonnen hat 2 oder wen Schere gewonnen hat 1 Karte ziehen. Bei jedem Unentschieden ziehen beide Personen $n$ Karten, wobei $n$ mit 1 startet und bei jedem Unentschieden um 1 erhöht wird\itemspace
+      \textbf{Rock Paper Scissors}: & - Spiele drei Runden Schere-Stein-Papier gegen die Person mit den wenigsten Karten. Nach jeder Niederlage muss man wenn Stein gewonnen hat 3, wenn Papier gewonnen hat 2, oder wenn Schere gewonnen hat 1 Karte ziehen. Bei jedem Unentschieden ziehen beide Personen $n$ Karten, wobei $n$ mit 1 startet und bei jedem Unentschieden um 1 erhöht wird\itemspace
     \end{tabular}
 
 % patchnotes in extra datei
